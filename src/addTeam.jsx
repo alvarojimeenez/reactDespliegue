@@ -56,7 +56,7 @@ export default function AddTeams() {
                 <label> Email: </label>
                 <input className="form-control" type="text" name="email" onChange={handleTeam} value={newTeam.email}></input><br></br>
                 
-                    {!check ?  <button type="submit" onClick={addTeam}>Añadir</button> : <button type="submit" onClick={update}>Editar</button>} 
+                    {!check ?  <button className="btn btn-primary" type="submit" onClick={addTeam}>Añadir</button> : <button className="btn btn-warning" type="submit" onClick={update}>Editar</button>} 
                 
             </form>
         </div>

@@ -19,13 +19,13 @@ export default function AppTeams() {
   }
   
   const elementTeam = t && t.map((element, index) => (
-    <li key={index}> 
+    <li key={index} className="form-control"> 
       Equipo: {element.name} <br></br>
       Ciudad: {element.city} <br></br>
       Email: {element.email}
-      <button><Link to={`/detail/${element._id}`}>Details</Link></button>
-      <button><Link to={`/addTeam/${element._id}`}>Edit</Link></button>
-      <button onClick={()=>deleteTeams(element._id)} id={element._id}> Borrar </button>
+      <button className="btn btn-success"><Link to={`/detail/${element._id}`}>Details</Link></button>
+      <button className="btn btn-warning"><Link to={`/addTeam/${element._id}`}>Edit</Link></button>
+      <button className="btn btn-danger" onClick={()=>deleteTeams(element._id)} id={element._id}> Borrar </button>
     </li>
   ));
   
