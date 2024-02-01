@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://api-node-mongo-red.vercel.app/teams';
+const baseURL = 'http://localhost:3000/teams';
 
 const apiService = axios.create({
 baseURL,

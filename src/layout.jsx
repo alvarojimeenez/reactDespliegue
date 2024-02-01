@@ -5,6 +5,7 @@ const Layout = () => {
       <nav style={{ display: "flex", justifyContent: "space-around" }}>
         <Link to="/teams">Team</Link>
         <Link to="/addTeam">Add team</Link>
+        <Link to="/register">Register</Link>
       </nav>
       <Outlet />
     </>
